@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning HTML</title>
-    <style>
+    <link rel="stylesheet" href="style.css" >
+    <!--  <style> This is how internal CSS works
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -12,6 +14,20 @@
             padding: 20px;
             background-color: #f9f9f9;
             color: #333;
+        }
+        hr {
+            background-color: white;
+            border: none;
+            border-style: inset;
+            height: 3px;
+        }
+
+        .custom-hr {
+             border-style: none;
+             border-top-style: dotted;
+             border-color: rgb(0, 0, 0);
+             border-width: 5px;
+             width: 100%;
         }
 
         pre {
@@ -27,7 +43,7 @@
             padding: 2px 4px;
             border-radius: 4px;
         }
-    </style>
+    </style>-->
 </head>
 
 <body>
@@ -35,7 +51,7 @@
     <p><em>what is HTML?</em></p>
     <p> HTML is a <em>Hyper-text markup language</em> which is used to make <strong>structure</strong> of any website.
     </p>
-    <hr sized="3" noshade>
+    <hr sized="3" noshade class="custom-hr">
     <h4>Basic boilerplate of HTML</h4>
     <pre>
         <code>
@@ -62,7 +78,7 @@
         heading).</p>
     <hr size="3" noshade>
     <h3>Self closing tags</h3>
-    <p><b> &lt;br&gt; , &lt;img&gt;, &lt;hr&gt;, &lt;input&gt; </b></p>
+    <p><b> &lt;br&gt; , &lt;img&gt;, &lt;hr&gt;, &lt;input&gt;, &lt;link&gt; </b></p>
     <hr>
     <h4>Italic and Bold element</h4>
     <dl>
