@@ -10,8 +10,8 @@ body {
 hr {
     background-color: white;
     border: none;
-    border-style: inset;
-    height: 3px;
+    height: 1px;
+    border-bottom: 2px solid black;
 }
 
 .custom-hr {
@@ -34,4 +34,16 @@ code {
     background: #eef;
     padding: 2px 4px;
     border-radius: 4px;
+}
+
+h1,h3{
+    color:#8B5DFF;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    font-family: Cambria;
 }
