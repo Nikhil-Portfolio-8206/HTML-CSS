@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Learning HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: monospace;
+            background: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Step wise learning curve in HTML</h1>
+    <p><em>what is HTML?</em></p>
+    <p> HTML is a <em>Hyper-text markup language</em> which is used to make <strong>structure</strong> of any website.
+    </p>
+    <hr sized="3" noshade>
+    <h4>Basic boilerplate of HTML</h4>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt; ---------------------<b>Tell the browswer type of document</b> 
+            &lt;html&gt;-------------------------------<b>Root element of HTML</b>
+            &lt;head&gt;------------------------------ <b><u>Head tag</u> is used to <em>link resources</em> like stylesheet and <em>instruction for browser about responsiveness</em> </b>
+                &lt;meta charset="utf-8"&gt;---------- <b><u>Meta tag</u> is used to provide information about web page | <u>Charset</u> is an attribute of meta tag used to inform about the character used i.e the system for encoding the character using UNICODE TRANSFORMATION FORMAT </b>
+                &lt;title&gt;My First Page&lt;/title&gt;-----<b>whatever written here is used to display in tab of the browser</b>
+            &lt;/head&gt;
+            &lt;body&gt;-------------------------------<b>The main content of HTML document is display to user in browser</b>
+                &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <hr size="3" noshade>
+    <p><em>see the just above</em> horizantal line which can be drawn using <b>hr tag</b>. Have you observed?, The just
+        above line with some width so width we can give using <b>size attribute</b> of <b>hr tag</b>.
+        <br><b>noshade attribute</b> is used to give solid flat line.
+    </p>
+    <h3>Heading Tag</h3>
+    <p>There are <b>6 type of headings</b> in HTML i.e from <b>h1 to h6</b> (where h1 is largest and h6 is smallest
+        heading).</p>
+    <hr size="3" noshade>
+    <h3>Self closing tags</h3>
+    <p><b> &lt;br&gt; , &lt;img&gt;, &lt;hr&gt;, &lt;input&gt; </b></p>
+    <hr>
+    <h4>Italic and Bold element</h4>
+    <dl>
+        <dt>Italic</dt>
+        <dd>
+            <p>Italic of text using &lt;i&gt; tag or &lt; em &gt; tag. however &lt; i &gt; tag is used only for italic
+                purpose but &lt; em &gt; tag is used for italic,emphasis,SEO and other purpose.</p>
+        </dd>
+    </dl>
+    <dl>
+        <dt>Bold</dt>
+        <dd>
+            <p>Bold of text using &lt;b&gt; tag or &lt;strong &gt; tag. however &lt; b &gt; tag is used only for Bold
+                purpose but &lt; strong &gt; tag is used for bold,SEO and other purpose.</p>
+        </dd>
+    </dl>
+    <hr size="3" noshade="">
+    <h3>List in HTML</h3>
+    <strong>Mainly 3 types</strong>
+    <ol>
+        <li>Ordered list</li>
+        <li>Unorderd list</li>
+        <li>Definiton list</li>
+    </ol>
+    <dl>
+        <dt><b>1. Ordered list</b></dt>
+        <dd>Odered list has by default type is number but when add an <b>attribure "type"</b> we can change type as
+            number, uppercase, lowercase, lowercase and uppercase roman.</dd>
+    </dl>
+    <dl>
+        <dt><b>2. Unordered list</b></dt>
+        <dd>Unodered list has by default type is disc but when add an <b>attribure "type"</b> we can change type as
+            square, circle , disc, none.</dd>
+    </dl>
+    <dl>
+        <dt><b>3. Definition list</b></dt>
+        <dd>Definition list is used show definiton term and definiton description.</dd>
+    </dl>
+    <hr size="3" noshade="">
+    <h3>Image element</h3>
+    <p> It is used to display image from local files or using any public image address across the web</p>
+    <img src="https://avatars.githubusercontent.com/u/48144706?v=4" alt="Nikhil profile picture">
+    <h3>Alt attribute</h3>
+    <p>It is used to display the alternative text when image can't be render by browser due to some reason. This
+        attribute also help in SEO.</p>
+    <hr size="3" noshade="">
+    <h3>Anchor element</h3>
+    <p>The anchor element is used to <strong>navigation</strong> between pages or to open link in new tab or any other
+        action using <strong>href</strong>(hypertext reference) attribute. By default the color of link is blue if we
+        have not click on link earlier if we have click on the click earlier then the colour of the link become purple
+    </p>
+    <strong><a href="https://github.com/Nikhil-Portfolio-8206" target="_blank">My github profile</a></strong>
+    <hr>
+    <h3>Download attribute</h3>
+    <strong><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf" download>Download HTML
+            sheet</a></strong>
+    <hr size="3" noshade="">
+    <h3>Linking multiple pages</h3>
+    <ul>
+        <a href="index.html">
+            <li>Home</li>
+        </a>
+        <a href="contact.html">
+            <li>Contact us</li>
+        </a>
+        <a href="Aboutus.html">
+            <li>About us</li>
+        </a>
+    </ul>
+    <hr size="3" noshade="">
+    <h3>Tables</h3>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Company</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nikhil</td>
+                <td>Cognizant</td>
+                <td>Front end developer</td>
+            </tr>
+            <tr>
+                <td>Andrew</td>
+                <td>XYZ</td>
+                <td>Backend developer</td>
+            </tr>
+            <tr>
+                <td>harshit</td>
+                <td>ABS</td>
+                <td>system design</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> Total employee=3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <h3>Linking multiple pages</h3>
+            </td>
+            <td>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact us</li>
+                    </a>
+                    <a href="Aboutus.html">
+                        <li>About us</li>
+                    </a>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <h3>Electronic items rating</h3>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Item 3</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Item 4</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+
+                    </tr>
+                    <tr>
+                        <td>Item 5</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Item 6</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr size="3" noshade="">
+    <h3>Sign UP Form</h3>
+    <form action="" method="">
+        <label>Name:</label>
+        <input type="text" name="Your name-" required><br>
+        <label>Email:</label>
+        <input type="email" name="Your email-" required><br>
+        <label>Password:</label>
+        <input type="password" name="Your password" required><br>
+        <label>Gender:</label>
+        <label>Male</label>
+        <input type="radio" name="Your Gender">
+        <label>Female</label>
+        <input type="radio" name="Your Gender"><br>
+        <label for="age">Age (5-99):</label>
+        <input type="number" id="age" name="age" min="5" max="99" required><br>
+        <label>Mobile:</label>
+        <input type="tel" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number"><br>
+        <label>Skill:</label>
+        <label>HTML</label>
+        <input type="checkbox" name="Your Skill">
+        <label>CSS</label>
+        <input type="checkbox" name="Your Skill">
+        <label>Javascript</label>
+        <input type="checkbox" name="Your Skill">
+        <label>React</label>
+        <input type="checkbox" name="Your Skill"><br>
+        <label>Select your country:</label>
+        <select id="country" name="Your country name-" required>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="India">UK</option>
+            <option value="USA">Pakistan</option>
+            <option value="India">Bangladesh</option>
+            <option value="USA">China</option>
+            <option value="India">Australia</option>
+            <option value="USA">Russia</option>
+        </select><br>
+        <label>Your Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset">
+    </form>
+    <hr size="3" noshade="">
+
+
+
+</body>
+
+</html>
