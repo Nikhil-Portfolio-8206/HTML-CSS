@@ -1,49 +1,63 @@
 body {
+    background-color: #f9f9f9;
+    color: #333;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
 hr {
     background-color: white;
+    border-bottom: 2px solid black;
     border: none;
     height: 1px;
-    border-bottom: 2px solid black;
+    
 }
 
 .custom-hr {
+    border-color: rgb(0, 0, 0);
     border-style: none;
     border-top-style: dotted;
-    border-color: rgb(0, 0, 0);
     border-width: 5px;
     width: 100%;
 }
 
 pre {
     background: #f4f4f4;
-    padding: 10px;
     border: 1px solid #ddd;
     overflow-x: auto;
+    padding: 10px;
 }
 
 code {
-    font-family: monospace;
     background: #eef;
-    padding: 2px 4px;
     border-radius: 4px;
+    font-family: monospace;
+    padding: 2px 4px;
 }
 
-h1,h3{
-    color:#8B5DFF;
-    font-size: 20px;
-    text-align: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px 0;
-    padding: 10px;
+h1,h3 {
     border-bottom: 2px solid black;
+    width: auto;
+    color: #8B5DFF;
     font-family: Cambria;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: -10px;
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.imgborder {
+    border: 5px solid black; /* Black border */
+    border-radius: 100%; /* Rounded corners */
+  }
+.thinline{
+    background-color: #8B5DFF;
+    border: 0;
+    height: 1px;
+    margin-top: 10px;
+    
 }
