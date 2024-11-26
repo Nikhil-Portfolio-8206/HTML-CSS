@@ -140,7 +140,7 @@
             sheet</a></strong>
     <hr size="3" noshade="" class="thinline">
     <h2>Linking multiple pages</h2>
-    <ul >
+    <ul>
         <a href="index.html">
             <li>Home</li>
         </a>
@@ -247,50 +247,80 @@
     <hr size="3" noshade="" class="thinline">
     <h3>Sign UP Form</h3>
     <form action="" method="">
-        <label>Name:</label>
-        <input type="text" name="Your name-" required><br>
-        <label>Email:</label>
-        <input type="email" name="Your email-" required><br>
-        <label>Password:</label>
-        <input type="password" name="Your password" required><br>
-        <label>Gender:</label>
-        <label>Male</label>
-        <input type="radio" name="Your Gender">
-        <label>Female</label>
-        <input type="radio" name="Your Gender"><br>
-        <label for="age">Age (5-99):</label>
-        <input type="number" id="age" name="age" min="5" max="99" required><br>
-        <label>Mobile:</label>
-        <input type="tel" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number"><br>
-        <label>Skill:</label>
-        <label>HTML</label>
-        <input type="checkbox" name="Your Skill">
-        <label>CSS</label>
-        <input type="checkbox" name="Your Skill">
-        <label>Javascript</label>
-        <input type="checkbox" name="Your Skill">
-        <label>React</label>
-        <input type="checkbox" name="Your Skill"><br>
-        <label>Select your country:</label>
-        <select id="country" name="Your country name-" required>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="India">UK</option>
-            <option value="USA">Pakistan</option>
-            <option value="India">Bangladesh</option>
-            <option value="USA">China</option>
-            <option value="India">Australia</option>
-            <option value="USA">Russia</option>
-        </select><br>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><label>Name:</label></td>
+                            <td><input type="text" name="Your name-" required></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Email:</label></td>
+                            <td> <input type="email" name="Your email-" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password:</label></td>
+                            <td><input type="password" name="Your password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender:</label></td>
+                            <td><label>Male</label> <input type="radio" name="Your Gender"><label>Female</label>
+                                <input type="radio" name="Your Gender">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="age">Age (12-99):</label></td>
+                            <td><input type="number" id="age" name="age" min="12" max="99" required></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Mobile:</label></td>
+                            <td><input type="tel" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Skill:</label></td>
+                            <td>
+                                <label style="margin-right: 28px;">HTML</label>
+                                <input type="checkbox" name="Your Skill">
+                                <label style="margin-right: 9px;">CSS</label>
+                                <input type="checkbox" name="Your Skill"><br>
+                                <label>Javascript</label>
+                                <input type="checkbox" name="Your Skill">
+                                <label>React</label>
+                                <input type="checkbox" name="Your Skill">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Country:</label></td>
+                            <td>
+                                <select id="country" name="Your country name-" required>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="India">UK</option>
+                                    <option value="USA">Pakistan</option>
+                                    <option value="India">Bangladesh</option>
+                                    <option value="USA">China</option>
+                                    <option value="India">Australia</option>
+                                    <option value="USA">Russia</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
         <label>Your Message:</label><br>
         <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
         <button type="submit">Submit</button>
         <input type="reset" value="Reset">
     </form>
     <hr size="3" noshade="" class="thinline">
-
-
-
 </body>
 
 </html>
