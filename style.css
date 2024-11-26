@@ -12,7 +12,7 @@ hr {
     border-bottom: 2px solid black;
     border: none;
     height: 1px;
-    
+
 }
 
 .custom-hr {
@@ -37,7 +37,9 @@ code {
     padding: 2px 4px;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     border-bottom: 2px solid black;
     width: auto;
     color: #8B5DFF;
@@ -50,14 +52,35 @@ h1,h2,h3 {
     text-transform: uppercase;
     display: inline-block;
 }
+
 .imgborder {
-    border: 5px solid black; /* Black border */
-    border-radius: 100%; /* Rounded corners */
-  }
-.thinline{
+    border: 5px solid black;
+    /* Black border */
+    border-radius: 100%;
+    /* Rounded corners */
+}
+
+.thinline {
     background-color: #8B5DFF;
     border: 0;
     height: 1px;
     margin-top: 10px;
-    
+
+}
+
+.basic-table {
+    border: 1px solid #996e6e;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 5px;/
+}
+
+.basic-table th, .basic-table td {
+    border: none;
+    /* Removes individual cell borders */
+    width: auto;
 }
